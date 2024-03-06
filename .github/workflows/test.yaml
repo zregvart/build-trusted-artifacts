@@ -28,5 +28,7 @@ jobs:
         go-version-file: acceptance/go.mod
         cache: true
 
+    - uses: lhotari/action-upterm@v1
+
     - name: Run checks
       run: make test
